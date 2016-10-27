@@ -61,16 +61,16 @@ export const mappings = {
             characters: [
                 {
                     id: 1,
-                    code: '0'
+                    code: 'FB56'
                 }, {
                     id: 2,
-                    code: '0'
+                    code: 'FB58'
                 }, {
                     id: 3,
-                    code: '0'
+                    code: 'FB59'
                 }, {
                     id: 4,
-                    code: '0'
+                    code: 'FB57'
                 }
             ]
         },

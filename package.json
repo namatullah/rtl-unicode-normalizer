@@ -1,0 +1,24 @@
+{
+  "name": "hex-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "tsc && concurrently \"npm run tsc:w\" nodemon server",
+    "postinstall": "typings install",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings/index.d.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "concurrently": "^2.2.0",
+    "typescript": "^2.1.0-dev.20161001",
+    "typings": "^1.4.0"
+  }
+}

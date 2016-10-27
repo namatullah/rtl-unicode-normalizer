@@ -1,4 +1,5 @@
 .idea/
-sample.ts
+node_modules
+typings
 **/*.js
 **/*.js.map

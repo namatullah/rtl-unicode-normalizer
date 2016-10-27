@@ -142,7 +142,6 @@ export class Character {
                 this.self.isAfterSticky() &&
                 this.after.isBeforeSticky()
             ) {
-
                 this.self.alphabet.forEach((c)=> {
                     if (c.isBeforeSticky && c.isAfterSticky) {
                         this.chosen = c;
