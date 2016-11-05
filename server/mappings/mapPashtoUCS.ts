@@ -1,4 +1,4 @@
-export const mappings = {
+export const pashtoMappings = {
     '622': {
         name: "AllefMad",
         characters: [
@@ -82,13 +82,13 @@ export const mappings = {
                 code: '067C'
             }, {
                 id: 2,
-                code: '0'
+                code: 'FE97'
             }, {
                 id: 3,
-                code: '0'
+                code: 'FE98'
             }, {
                 id: 4,
-                code: '0'
+                code: 'FE96'
             }
         ]
     },
@@ -190,13 +190,13 @@ export const mappings = {
                 code: '0685'
             }, {
                 id: 2,
-                code: '0'
+                code: 'FE9B'
             }, {
                 id: 3,
-                code: '0'
+                code: 'FE9C'
             }, {
                 id: 4,
-                code: '0'
+                code: 'FE9A'
             }
         ]
     },
@@ -208,13 +208,13 @@ export const mappings = {
                 code: '0681'
             }, {
                 id: 2,
-                code: '0'
+                code: 'FEB0'
             }, {
                 id: 3,
-                code: '0'
+                code: 'FEC0'
             }, {
                 id: 4,
-                code: '0'
+                code: 'FEBE'
             }
         ]
     },
@@ -238,7 +238,7 @@ export const mappings = {
                 code: '0689'
             }, {
                 id: 2,
-                code: '0'
+                code: 'FEAA'
             }
         ]
     },
@@ -274,7 +274,7 @@ export const mappings = {
                 code: '0693'
             }, {
                 id: 2,
-                code: '0'
+                code: 'FEAE'
             }
         ]
     },
@@ -310,7 +310,7 @@ export const mappings = {
                 code: '0696'
             }, {
                 id: 2,
-                code: '0'
+                code: 'FB8B'
             }
         ]
     },
@@ -520,13 +520,13 @@ export const mappings = {
                 code: '06AB'
             }, {
                 id: 2,
-                code: '0'
+                code: 'FB94'
             }, {
                 id: 3,
-                code: '0'
+                code: 'FB95'
             }, {
                 id: 4,
-                code: '0'
+                code: 'FB93'
             }
         ]
     },
@@ -592,13 +592,13 @@ export const mappings = {
                 code: '06BC'
             }, {
                 id: 2,
-                code: '0'
+                code: 'FEE7'
             }, {
                 id: 3,
-                code: '0'
+                code: 'FEE8'
             }, {
                 id: 4,
-                code: '0'
+                code: 'FEE6'
             }
         ]
     },
@@ -670,13 +670,13 @@ export const mappings = {
                 code: '06D0'
             }, {
                 id: 2,
-                code: '0'
+                code: 'FEF3'
             }, {
                 id: 3,
-                code: '0'
+                code: 'FEF4'
             }, {
                 id: 4,
-                code: '0'
+                code: 'FEF2'
             }
         ]
     },
@@ -688,11 +688,11 @@ export const mappings = {
                 code: '06CD'
             }, {
                 id: 2,
-                code: ''
+                code: 'FEF0'
             }
         ]
     },
-    '628': {
+    '626': {
         name: "YaHamza",
         characters: [
             {
@@ -709,5 +709,5 @@ export const mappings = {
                 code: 'FE8A'
             }
         ]
-    },
+    }
 };

@@ -1,14 +1,24 @@
-import {alphabets} from "../alphabets/dariSrc";
-import {mappings} from "../mappings/mapDariUCS";
 import {Family} from "./family";
+import {englishAlphabets} from "../alphabets/EnglishSrc";
+import {dariAlphabets} from "../alphabets/dariSrc";
+import {pashtoAlphabets} from "../alphabets/pashtoSrc";
+import {englishMappings} from "../mappings/mapEnglishUCS";
+import {dariMappings} from "../mappings/mapDariUCS";
+import {pashtoMappings} from "../mappings/mapPashtoUCS";
+import {symbolsMapping} from "../mappings/mapSymbolsUCS";
+import {symbols} from "../alphabets/symbolSrc";
+import {number} from "../alphabets/numberSrc";
+import {numberMapping} from "../mappings/mapNumberUCS";
+var alphabets = (<any>Object).assign(englishAlphabets, pashtoAlphabets, dariAlphabets, symbols, number);
+var mappings = (<any>Object).assign(englishMappings, pashtoMappings, dariMappings, symbolsMapping, numberMapping);
 
 export interface IRawCharacterAlphabet {
     id: number,
     name: string,
-    isBeforeSticky: boolean;
-    isAfterSticky: boolean;
-    canStart: boolean;
-    canEnd: boolean;
+    isBeforeSticky: boolean,
+    isAfterSticky: boolean,
+    canStart: boolean,
+    canEnd: boolean
 }
 
 export interface IRawCharacterMapping {
@@ -36,13 +46,31 @@ export class Character {
     }) {
         this.before = !config.before ?
             undefined :
-            new Family(alphabets[config.before].characters, mappings[config.before].characters);
+            new Family({
+                isRTL: alphabets[config.before].isRTL,
+                characters: {
+                    alphabet: alphabets[config.before].characters,
+                    mapping: mappings[config.before].characters
+                }
+            });
 
         this.after = !config.after ?
             undefined :
-            new Family(alphabets[config.after].characters, mappings[config.after].characters);
+            new Family({
+                isRTL: alphabets[config.after].isRTL,
+                characters: {
+                    alphabet: alphabets[config.after].characters,
+                    mapping: mappings[config.after].characters
+                }
+            });
 
-        this.self = new Family(alphabets[config.self].characters, mappings[config.self].characters);
+        this.self = new Family({
+            isRTL: alphabets[config.self].isRTL,
+            characters: {
+                alphabet: alphabets[config.self].characters,
+                mapping: mappings[config.self].characters
+            }
+        });
 
         this.familyCode = config.self;
 
@@ -63,9 +91,10 @@ export class Character {
         this.chooseIfInMiddleBeforeStickyAfterNonSticky();
         this.chooseIfInMiddleBeforeNonStickyAfterSticky();
         this.chooseIfInMiddleBeforeNonStickyAfterNonSticky();
-
         this.code = mappings[this.familyCode].characters.find((m)=> {
-            return m.id == this.chosen.id;
+            if (m.id == this.chosen.id) {
+                return m.id;
+            }
         }).code;
 
         // Fill in the fields
@@ -80,13 +109,12 @@ export class Character {
         if (this.chosen) {
             return;
         }
-        if (!this.isAtBeginning() && !this.isAtBeginning()) {
+        if (!this.isAtBeginning()) {
             if (
                 !this.before.isAfterSticky() &&
                 this.self.isAfterSticky() &&
                 this.after.isBeforeSticky()
             ) {
-
                 this.self.alphabet.forEach((c)=> {
                     if (!c.isBeforeSticky && c.isAfterSticky) {
                         this.chosen = c;
@@ -100,15 +128,23 @@ export class Character {
         if (this.chosen) {
             return;
         }
-        if (!this.isAtBeginning() && !this.isAtBeginning()) {
-            if (!this.before.isAfterSticky() && !this.self.isAfterSticky()) {
+        if (!this.isAtBeginning() && !this.isAtEnd()) {
 
-                this.self.alphabet.forEach((c)=> {
-                    if (!c.isBeforeSticky && !c.isAfterSticky) {
-                        this.chosen = c;
-                    }
-                });
-            }
+            // console.log('self B: ', this.self.isBeforeSticky());
+            // console.log('self a: ', this.self.isAfterSticky());
+            //
+            // console.log('before: ', this.before.isAfterSticky());
+            // console.log('after: ', this.after.isBeforeSticky());
+
+
+            // if (!this.before.isAfterSticky() && this.self.isBeforeSticky() && this.self.isAfterSticky()) {
+
+            this.self.alphabet.forEach((c)=> {
+                if (!c.isBeforeSticky && !c.isAfterSticky) {
+                    this.chosen = c;
+                }
+            });
+            // }
         }
     }
 
@@ -116,12 +152,9 @@ export class Character {
         if (this.chosen) {
             return;
         }
-        if (!this.isAtBeginning() && !this.isAtBeginning()) {
-            if (
-                this.before.isAfterSticky() &&
-                this.self.isBeforeSticky() && !this.self.isAfterSticky()
-            ) {
-
+        if (!this.isAtBeginning()) {
+            // !this.self.isAfterSticky() &&
+            if (!this.self.isAfterSticky() && this.before.isAfterSticky() && this.self.isBeforeSticky()) {
                 this.self.alphabet.forEach((c)=> {
                     if (c.isBeforeSticky && !c.isAfterSticky) {
                         this.chosen = c;
@@ -135,7 +168,7 @@ export class Character {
         if (this.chosen) {
             return;
         }
-        if (!this.isAtBeginning() && !this.isAtBeginning()) {
+        if (!this.isAtBeginning()) {
             if (
                 this.before.isAfterSticky() &&
                 this.self.isBeforeSticky() &&
@@ -211,12 +244,24 @@ export class Character {
         }
     }
 
-
     private chooseIfOneLetterWord() {
         if (this.chosen) {
             return;
         }
-        if (this.isAtBeginning()) {
+        if (!this.isAtBeginning() && !this.isAtEnd()) {
+            if (
+                !this.before.isAfterSticky() && !this.self.isBeforeSticky() && !this.self.isAfterSticky() && !this.after.isBeforeSticky()
+            ) {
+                // console.log('here')
+
+                this.self.alphabet.forEach((c)=> {
+                    // console.log('Data: ',c);
+                    if (!c.isBeforeSticky && !c.isAfterSticky) {
+                        this.chosen = c;
+                    }
+                });
+            }
+        } else if (this.isAtBeginning()) {
             if (this.isAtEnd()) {
                 this.self.alphabet.forEach((c)=> {
                     if (c.canEnd && c.canStart) {
@@ -259,13 +304,15 @@ export class Character {
         return String.fromCharCode(parseInt(this.code, 16));
     }
 
-    static calculateBeforeCode (str, index) {
+    static calculateBeforeCode(str, index) {
         return index == 0 ? undefined : str.charCodeAt(index - 1).toString(16);
     }
-    static calculateSelfCode (str, index) {
+
+    static calculateSelfCode(str, index) {
         return str.charCodeAt(index).toString(16);
     }
-    static calculateAfterCode (str, index) {
+
+    static calculateAfterCode(str, index) {
         return index == str.length - 1 ? undefined : str.charCodeAt(index + 1).toString(16);
     }
 }

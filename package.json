@@ -14,7 +14,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "string-direction": "^0.1.2"
   },
   "devDependencies": {
     "concurrently": "^2.2.0",

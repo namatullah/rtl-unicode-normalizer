@@ -1,7 +1,7 @@
-export const englishAlphabets = {
-    '61': {
-        name: "a",
-        isRTL: false,
+export const symbols = {
+    '20': {
+        name: "SP",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -12,9 +12,22 @@ export const englishAlphabets = {
             }
         ]
     },
-    '62': {
-        name: "b",
-        isRTL: false,
+    '21': {
+        name: "Exclamation",
+        isRTL: true,
+        characters: [
+            {
+                id: 1,
+                isAfterSticky: false,
+                isBeforeSticky: false,
+                canStart: false,
+                canEnd: true
+            }
+        ]
+    },
+    '22': {
+        name: "Quotation",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -25,9 +38,9 @@ export const englishAlphabets = {
             }
         ]
     },
-    '63': {
-        name: "c",
-        isRTL: false,
+    '23': {
+        name: "NumberSign",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -38,21 +51,9 @@ export const englishAlphabets = {
             }
         ]
     },
-    '64': {
-        name: "d",
-        isRTL: false,
-        characters: [
-            {
-                id: 1,
-                isAfterSticky: false,
-                isBeforeSticky: false,
-                canStart: true,
-                canEnd: true
-            }
-        ]
-    }, '65': {
-        name: "e",
-        isRTL: false,
+    '24': {
+        name: "DollarSign",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -63,9 +64,9 @@ export const englishAlphabets = {
             }
         ]
     },
-    '66': {
-        name: "f",
-        isRTL: false,
+    '25': {
+        name: "PercentSign",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -76,9 +77,9 @@ export const englishAlphabets = {
             }
         ]
     },
-    '67': {
-        name: "g",
-        isRTL: false,
+    '26': {
+        name: "Ampersand",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -89,9 +90,9 @@ export const englishAlphabets = {
             }
         ]
     },
-    '68': {
-        name: "h",
-        isRTL: false,
+    '27': {
+        name: "Apostrophe",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -102,9 +103,9 @@ export const englishAlphabets = {
             }
         ]
     },
-    '69': {
-        name: "i",
-        isRTL: false,
+    '28': {
+        name: "LeftParentheses",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -115,9 +116,9 @@ export const englishAlphabets = {
             }
         ]
     },
-    '6a': {
-        name: "j",
-        isRTL: false,
+    '29': {
+        name: "RightParentheses",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -128,9 +129,9 @@ export const englishAlphabets = {
             }
         ]
     },
-    '6b': {
-        name: "k",
-        isRTL: false,
+    '2a': {
+        name: "Asterisk",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -141,9 +142,9 @@ export const englishAlphabets = {
             }
         ]
     },
-    '6c': {
-        name: "l",
-        isRTL: false,
+    '2b': {
+        name: "PlusSign",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -154,9 +155,9 @@ export const englishAlphabets = {
             }
         ]
     },
-    '6d': {
-        name: "m",
-        isRTL: false,
+    '2c': {
+        name: "Comma",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -167,9 +168,9 @@ export const englishAlphabets = {
             }
         ]
     },
-    '6e': {
-        name: "n",
-        isRTL: false,
+    '2d': {
+        name: "HyphenMinus",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -180,9 +181,22 @@ export const englishAlphabets = {
             }
         ]
     },
-    '6f': {
-        name: "o",
-        isRTL: false,
+    '2e': {
+        name: "FullStop",
+        isRTL: true,
+        characters: [
+            {
+                id: 1,
+                isAfterSticky: false,
+                isBeforeSticky: false,
+                canStart: false,
+                canEnd: true
+            }
+        ]
+    },
+    '2f': {
+        name: "Solidus",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -193,9 +207,9 @@ export const englishAlphabets = {
             }
         ]
     },
-    '70': {
-        name: "p",
-        isRTL: false,
+    '3a': {
+        name: "Colon",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -206,9 +220,9 @@ export const englishAlphabets = {
             }
         ]
     },
-    '71': {
-        name: "q",
-        isRTL: false,
+    '3b': {
+        name: "Semicolon",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -219,9 +233,9 @@ export const englishAlphabets = {
             }
         ]
     },
-    '72': {
-        name: "r",
-        isRTL: false,
+    '3c': {
+        name: "LessThan",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -232,9 +246,9 @@ export const englishAlphabets = {
             }
         ]
     },
-    '73': {
-        name: "s",
-        isRTL: false,
+    '3d': {
+        name: "Equal",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -245,9 +259,9 @@ export const englishAlphabets = {
             }
         ]
     },
-    '74': {
-        name: "t",
-        isRTL: false,
+    '3e': {
+        name: "Greater",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -258,9 +272,9 @@ export const englishAlphabets = {
             }
         ]
     },
-    '75': {
-        name: "u",
-        isRTL: false,
+    '3f': {
+        name: "QuestionMark",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -271,9 +285,9 @@ export const englishAlphabets = {
             }
         ]
     },
-    '76': {
-        name: "v",
-        isRTL: false,
+    '40': {
+        name: "At",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -284,9 +298,9 @@ export const englishAlphabets = {
             }
         ]
     },
-    '77': {
-        name: "w",
-        isRTL: false,
+    '5b': {
+        name: "LeftSquareBracket",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -297,9 +311,9 @@ export const englishAlphabets = {
             }
         ]
     },
-    '78': {
-        name: "x",
-        isRTL: false,
+    '5c': {
+        name: "ReverseSolidus",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -310,9 +324,9 @@ export const englishAlphabets = {
             }
         ]
     },
-    '79': {
-        name: "y",
-        isRTL: false,
+    '5d': {
+        name: "RightSquareBracket",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -323,9 +337,9 @@ export const englishAlphabets = {
             }
         ]
     },
-    '7a': {
-        name: "z",
-        isRTL: false,
+    '5e': {
+        name: "CircumflexAccent",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -336,9 +350,9 @@ export const englishAlphabets = {
             }
         ]
     },
-    '41': {
-        name: "A",
-        isRTL: false,
+    '5f': {
+        name: "LowLine",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -349,9 +363,9 @@ export const englishAlphabets = {
             }
         ]
     },
-    '42': {
-        name: "B",
-        isRTL: false,
+    '60': {
+        name: "GraveAccent",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -362,9 +376,9 @@ export const englishAlphabets = {
             }
         ]
     },
-    '43': {
-        name: "C",
-        isRTL: false,
+    '7b': {
+        name: "LeftCurlyBracket",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -375,9 +389,9 @@ export const englishAlphabets = {
             }
         ]
     },
-    '44': {
-        name: "D",
-        isRTL: false,
+    '7c': {
+        name: "VerticalLine",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -388,9 +402,9 @@ export const englishAlphabets = {
             }
         ]
     },
-    '45': {
-        name: "E",
-        isRTL: false,
+    '7d': {
+        name: "RightCurlyBracket",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -401,9 +415,9 @@ export const englishAlphabets = {
             }
         ]
     },
-    '46': {
-        name: "F",
-        isRTL: false,
+    '7e': {
+        name: "Tilde",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -414,9 +428,36 @@ export const englishAlphabets = {
             }
         ]
     },
-    '47': {
-        name: "G",
-        isRTL: false,
+    // Arabic symbol
+    '60c': {
+        name: "Comma",
+        isRTL: true,
+        characters: [
+            {
+                id: 1,
+                isAfterSticky: false,
+                isBeforeSticky: false,
+                canStart: false,
+                canEnd: false
+            }
+        ]
+    },
+    '61b': {
+        name: "Semicolon",
+        isRTL: true,
+        characters: [
+            {
+                id: 1,
+                isAfterSticky: false,
+                isBeforeSticky: false,
+                canStart: false,
+                canEnd: false
+            }
+        ]
+    },
+    '61c': {
+        name: "LetterMark",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -427,249 +468,15 @@ export const englishAlphabets = {
             }
         ]
     },
-    '48': {
-        name: "H",
-        isRTL: false,
+    '61f': {
+        name: "QuestionMark",
+        isRTL: true,
         characters: [
             {
                 id: 1,
                 isAfterSticky: false,
                 isBeforeSticky: false,
-                canStart: true,
-                canEnd: true
-            }
-        ]
-    },
-    '49': {
-        name: "I",
-        isRTL: false,
-        characters: [
-            {
-                id: 1,
-                isAfterSticky: false,
-                isBeforeSticky: false,
-                canStart: true,
-                canEnd: true
-            }
-        ]
-    },
-    '4a': {
-        name: "J",
-        isRTL: false,
-        characters: [
-            {
-                id: 1,
-                isAfterSticky: false,
-                isBeforeSticky: false,
-                canStart: true,
-                canEnd: true
-            }
-        ]
-    },
-    '4b': {
-        name: "K",
-        isRTL: false,
-        characters: [
-            {
-                id: 1,
-                isAfterSticky: false,
-                isBeforeSticky: false,
-                canStart: true,
-                canEnd: true
-            }
-        ]
-    },
-    '4c': {
-        name: "L",
-        isRTL: false,
-        characters: [
-            {
-                id: 1,
-                isAfterSticky: false,
-                isBeforeSticky: false,
-                canStart: true,
-                canEnd: true
-            }
-        ]
-    },
-    '4d': {
-        name: "M",
-        isRTL: false,
-        characters: [
-            {
-                id: 1,
-                isAfterSticky: false,
-                isBeforeSticky: false,
-                canStart: true,
-                canEnd: true
-            }
-        ]
-    },
-    '4e': {
-        name: "N",
-        isRTL: false,
-        characters: [
-            {
-                id: 1,
-                isAfterSticky: false,
-                isBeforeSticky: false,
-                canStart: true,
-                canEnd: true
-            }
-        ]
-    },
-    '4f': {
-        name: "O",
-        isRTL: false,
-        characters: [
-            {
-                id: 1,
-                isAfterSticky: false,
-                isBeforeSticky: false,
-                canStart: true,
-                canEnd: true
-            }
-        ]
-    },
-    '50': {
-        name: "P",
-        isRTL: false,
-        characters: [
-            {
-                id: 1,
-                isAfterSticky: false,
-                isBeforeSticky: false,
-                canStart: true,
-                canEnd: true
-            }
-        ]
-    },
-    '51': {
-        name: "Q",
-        isRTL: false,
-        characters: [
-            {
-                id: 1,
-                isAfterSticky: false,
-                isBeforeSticky: false,
-                canStart: true,
-                canEnd: true
-            }
-        ]
-    },
-    '52': {
-        name: "R",
-        isRTL: false,
-        characters: [
-            {
-                id: 1,
-                isAfterSticky: false,
-                isBeforeSticky: false,
-                canStart: true,
-                canEnd: true
-            }
-        ]
-    },
-    '53': {
-        name: "S",
-        isRTL: false,
-        characters: [
-            {
-                id: 1,
-                isAfterSticky: false,
-                isBeforeSticky: false,
-                canStart: true,
-                canEnd: true
-            }
-        ]
-    },
-    '54': {
-        name: "T",
-        isRTL: false,
-        characters: [
-            {
-                id: 1,
-                isAfterSticky: false,
-                isBeforeSticky: false,
-                canStart: true,
-                canEnd: true
-            }
-        ]
-    },
-    '55': {
-        name: "U",
-        isRTL: false,
-        characters: [
-            {
-                id: 1,
-                isAfterSticky: false,
-                isBeforeSticky: false,
-                canStart: true,
-                canEnd: true
-            }
-        ]
-    },
-    '56': {
-        name: "V",
-        isRTL: false,
-        characters: [
-            {
-                id: 1,
-                isAfterSticky: false,
-                isBeforeSticky: false,
-                canStart: true,
-                canEnd: true
-            }
-        ]
-    },
-    '57': {
-        name: "W",
-        isRTL: false,
-        characters: [
-            {
-                id: 1,
-                isAfterSticky: false,
-                isBeforeSticky: false,
-                canStart: true,
-                canEnd: true
-            }
-        ]
-    },
-    '58': {
-        name: "X",
-        isRTL: false,
-        characters: [
-            {
-                id: 1,
-                isAfterSticky: false,
-                isBeforeSticky: false,
-                canStart: true,
-                canEnd: true
-            }
-        ]
-    },
-    '59': {
-        name: "Y",
-        isRTL: false,
-        characters: [
-            {
-                id: 1,
-                isAfterSticky: false,
-                isBeforeSticky: false,
-                canStart: true,
-                canEnd: true
-            }
-        ]
-    },
-    '5a': {
-        name: "Z",
-        isRTL: false,
-        characters: [
-            {
-                id: 1,
-                isAfterSticky: false,
-                isBeforeSticky: false,
-                canStart: true,
+                canStart: false,
                 canEnd: true
             }
         ]

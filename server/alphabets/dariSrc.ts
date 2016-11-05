@@ -1,6 +1,7 @@
-export const alphabets = {
+export const dariAlphabets = {
     '622': {
         name: "AllefMad",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -13,6 +14,7 @@ export const alphabets = {
     },
     '627': {
         name: "Allef",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -32,6 +34,7 @@ export const alphabets = {
     },
     '628': {
         name: "Ba",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -62,6 +65,7 @@ export const alphabets = {
     },
     '62a': {
         name: "Ta",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -92,6 +96,7 @@ export const alphabets = {
     },
     '67e': {
         name: "Pa",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -122,6 +127,7 @@ export const alphabets = {
     },
     '62b': {
         name: "Sa",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -152,6 +158,7 @@ export const alphabets = {
     },
     '62c': {
         name: "Gim",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -182,6 +189,7 @@ export const alphabets = {
     },
     '686': {
         name: "Cha",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -212,6 +220,7 @@ export const alphabets = {
     },
     '62d': {
         name: "Ha",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -242,6 +251,7 @@ export const alphabets = {
     },
     '62e': {
         name: "Kha",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -272,6 +282,7 @@ export const alphabets = {
     },
     '62f': {
         name: "Dal",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -290,6 +301,7 @@ export const alphabets = {
     },
     '630': {
         name: "Zal",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -308,6 +320,7 @@ export const alphabets = {
     },
     '631': {
         name: "Ra",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -326,6 +339,7 @@ export const alphabets = {
     },
     '632': {
         name: "Za",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -344,6 +358,7 @@ export const alphabets = {
     },
     '698': {
         name: "Zha",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -362,6 +377,7 @@ export const alphabets = {
     },
     '633': {
         name: "Sen",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -392,6 +408,7 @@ export const alphabets = {
     },
     '634': {
         name: "Shen",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -422,6 +439,7 @@ export const alphabets = {
     },
     '635': {
         name: "Sat",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -452,6 +470,7 @@ export const alphabets = {
     },
     '636': {
         name: "Zat",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -482,6 +501,7 @@ export const alphabets = {
     },
     '637': {
         name: "Toy",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -512,6 +532,7 @@ export const alphabets = {
     },
     '638': {
         name: "Zoy",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -542,6 +563,7 @@ export const alphabets = {
     },
     '639': {
         name: "Ain",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -572,6 +594,7 @@ export const alphabets = {
     },
     '63a': {
         name: "Ghain",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -602,6 +625,7 @@ export const alphabets = {
     },
     '641': {
         name: "Fa",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -632,6 +656,7 @@ export const alphabets = {
     },
     '642': {
         name: "Qaf",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -662,6 +687,7 @@ export const alphabets = {
     },
     '6a9': {
         name: "Kaf",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -692,6 +718,7 @@ export const alphabets = {
     },
     '6af': {
         name: "Gaf",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -722,6 +749,7 @@ export const alphabets = {
     },
     '644': {
         name: "Lam",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -752,6 +780,7 @@ export const alphabets = {
     },
     '645': {
         name: "Mim",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -782,6 +811,7 @@ export const alphabets = {
     },
     '646': {
         name: "Nun",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -812,6 +842,7 @@ export const alphabets = {
     },
     '647': {
         name: "He",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -842,6 +873,7 @@ export const alphabets = {
     },
     '648': {
         name: "Wow",
+        isRTL: true,
         characters: [
             {
                 id: 1,
@@ -860,6 +892,7 @@ export const alphabets = {
     },
     '6cc': {
         name: "Ya",
+        isRTL: true,
         characters: [
             {
                 id: 1,
