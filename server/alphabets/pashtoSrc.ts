@@ -587,6 +587,37 @@ export const pashtoAlphabets = {
             }
         ]
     },
+    '69a': {
+        name: "Skhen",
+        isRTL: true,
+        characters: [
+            {
+                id: 1,
+                isAfterSticky: false,
+                isBeforeSticky: false,
+                canStart: false,
+                canEnd: true
+            }, {
+                id: 2,
+                isAfterSticky: true,
+                isBeforeSticky: false,
+                canStart: true,
+                canEnd: false
+            }, {
+                id: 3,
+                isAfterSticky: true,
+                isBeforeSticky: true,
+                canStart: false,
+                canEnd: false
+            }, {
+                id: 4,
+                isAfterSticky: false,
+                isBeforeSticky: true,
+                canStart: false,
+                canEnd: true
+            }
+        ]
+    },
     '635': {
         name: "Sat",
         isRTL: true,

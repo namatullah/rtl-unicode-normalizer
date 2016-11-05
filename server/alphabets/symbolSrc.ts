@@ -391,7 +391,7 @@ export const symbols = {
     },
     '7c': {
         name: "VerticalLine",
-        isRTL: true,
+        isRTL: false,
         characters: [
             {
                 id: 1,

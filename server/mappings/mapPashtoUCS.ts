@@ -350,6 +350,24 @@ export const pashtoMappings = {
             }
         ]
     },
+    '69a': {
+        name: "Skhen",
+        characters: [
+            {
+                id: 1,
+                code: '069A'
+            }, {
+                id: 2,
+                code: 'FEB7'
+            }, {
+                id: 3,
+                code: 'FEB8'
+            }, {
+                id: 4,
+                code: 'FEB6'
+            }
+        ]
+    },
     '635': {
         name: "Sat",
         characters: [
@@ -640,6 +658,12 @@ export const pashtoMappings = {
                 code: 'FEEF'
             }, {
                 id: 2,
+                code: 'FEF3'
+            }, {
+                id: 3,
+                code: 'FEF4'
+            }, {
+                id: 4,
                 code: 'FEF0'
             }
         ]

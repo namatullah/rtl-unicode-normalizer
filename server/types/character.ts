@@ -1,5 +1,5 @@
 import {Family} from "./family";
-import {englishAlphabets} from "../alphabets/EnglishSrc";
+import {englishAlphabets} from "../alphabets/englishSrc";
 import {dariAlphabets} from "../alphabets/dariSrc";
 import {pashtoAlphabets} from "../alphabets/pashtoSrc";
 import {englishMappings} from "../mappings/mapEnglishUCS";
@@ -302,6 +302,10 @@ export class Character {
 
     getCharacter(): string {
         return String.fromCharCode(parseInt(this.code, 16));
+    }
+
+    isRTL(): boolean {
+        return this.self.isRTL;
     }
 
     static calculateBeforeCode(str, index) {

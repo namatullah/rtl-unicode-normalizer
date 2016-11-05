@@ -128,5 +128,136 @@ export const number = {
                 canEnd: true
             }
         ]
+    }    ,
+    // Arabic number
+    '6f0': {
+        name: "Zero",
+        isRTL: true,
+        characters: [
+            {
+                id: 1,
+                isAfterSticky: false,
+                isBeforeSticky: false,
+                canStart: true,
+                canEnd: true
+            }
+        ]
+    },
+    '6f1': {
+        name: "One",
+        isRTL: true,
+        characters: [
+            {
+                id: 1,
+                isAfterSticky: false,
+                isBeforeSticky: false,
+                canStart: true,
+                canEnd: true
+            }
+        ]
+    },
+    '6f2': {
+        name: "Two",
+        isRTL: true,
+        characters: [
+            {
+                id: 1,
+                isAfterSticky: false,
+                isBeforeSticky: false,
+                canStart: true,
+                canEnd: true
+            }
+        ]
+    },
+    '6f3': {
+        name: "Three",
+        isRTL: true,
+        characters: [
+            {
+                id: 1,
+                isAfterSticky: false,
+                isBeforeSticky: false,
+                canStart: true,
+                canEnd: true
+            }
+        ]
+    },
+    '6f4': {
+        name: "Four",
+        isRTL: true,
+        characters: [
+            {
+                id: 1,
+                isAfterSticky: false,
+                isBeforeSticky: false,
+                canStart: true,
+                canEnd: true
+            }
+        ]
+    },
+    '6f5': {
+        name: "Five",
+        isRTL: true,
+        characters: [
+            {
+                id: 1,
+                isAfterSticky: false,
+                isBeforeSticky: false,
+                canStart: true,
+                canEnd: true
+            }
+        ]
+    },
+    '6f6': {
+        name: "Six",
+        isRTL: true,
+        characters: [
+            {
+                id: 1,
+                isAfterSticky: false,
+                isBeforeSticky: false,
+                canStart: true,
+                canEnd: true
+            }
+        ]
+    },
+    '6f7': {
+        name: "Seven",
+        isRTL: true,
+        characters: [
+            {
+                id: 1,
+                isAfterSticky: false,
+                isBeforeSticky: false,
+                canStart: true,
+                canEnd: true
+            }
+        ]
+    },
+    '6f8': {
+        name: "Eight",
+        isRTL: true,
+        characters: [
+            {
+                id: 1,
+                isAfterSticky: false,
+                isBeforeSticky: false,
+                canStart: true,
+                canEnd: true
+            }
+        ]
+    },
+    '6f9': {
+        name: "Nine",
+        isRTL: true,
+        characters: [
+            {
+                id: 1,
+                isAfterSticky: false,
+                isBeforeSticky: false,
+                canStart: true,
+                canEnd: true
+            }
+        ]
     }
 };
