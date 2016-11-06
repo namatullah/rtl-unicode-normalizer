@@ -1,5 +1,5 @@
 import {Character} from "./character";
-export class RTLConverter {
+export class RTLUnicodeNormalizer {
 
     private source: string;
     private destinationCharacters: Character[];
