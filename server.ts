@@ -1,5 +1,5 @@
 import * as express from 'express';
-import Sample from "./server/sample";
+import Sample from "./src/sample";
 // var app = express();
 Sample.init();
 // app.listen(3000,()=>{

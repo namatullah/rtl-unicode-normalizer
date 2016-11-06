@@ -1,25 +1,24 @@
 {
-  "name": "hex-code",
+  "name": "rtl-unicode-normalizer",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "A configurable package for normalizing contextual forms of RTL characters. Also normalizing texts with both RTL and LTR characters.",
   "scripts": {
-    "start": "tsc && concurrently \"npm run tsc:w\" nodemon server",
-    "postinstall": "typings install",
-    "tsc": "tsc",
-    "tsc:w": "tsc -w",
-    "typings": "typings/index.d.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "tsc",
+    "typings": "index.d.ts"
   },
-  "author": "",
+  "author": "Namatullah",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.14.0",
-    "string-direction": "^0.1.2"
-  },
   "devDependencies": {
-    "concurrently": "^2.2.0",
     "typescript": "^2.1.0-dev.20161001",
     "typings": "^1.4.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "A configurable package for normalizing contextual forms of RTL characters. Also normalizing texts with both RTL and LTR characters."
+  },
+  "keywords": [
+    "git",
+    "repository:",
+    "(ssh://intern03@gitblit.midsserver.com:29418/encoding-mapper.git)"
+  ]
 }
