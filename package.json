@@ -4,7 +4,8 @@
   "description": "A configurable package for normalizing contextual forms of RTL characters. Also normalizing texts with both RTL and LTR characters.",
   "scripts": {
     "prepublish": "tsc",
-    "typings": "index.d.ts"
+    "typings": "index.d.ts",
+    "start": "node server.js"
   },
   "author": "Namatullah",
   "license": "ISC",
@@ -14,11 +15,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "A configurable package for normalizing contextual forms of RTL characters. Also normalizing texts with both RTL and LTR characters."
+    "url": "git+https://github.com/namatullah/rtl-unicode-normalizer.git"
   },
   "keywords": [
-    "git",
-    "repository:",
-    "(ssh://intern03@gitblit.midsserver.com:29418/encoding-mapper.git)"
-  ]
+    "unicode",
+    "normalizer",
+    "normalization",
+    "convert",
+    "Dari",
+    "Persian",
+    "Pashto",
+    "English"
+  ],
+  "bugs": {
+    "url": "https://github.com/namatullah/rtl-unicode-normalizer/issues"
+  },
+  "homepage": "https://github.com/namatullah/rtl-unicode-normalizer#readme",
+  "main": "index.js",
+  "dependencies": {}
 }
