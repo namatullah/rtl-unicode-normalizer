@@ -529,7 +529,7 @@ export const dariMappings = {
         characters: [
             {
                 id: 1,
-                code: 'FEF0'
+                code: 'FEEF'
             }, {
                 id: 2,
                 code: 'FEF3'
