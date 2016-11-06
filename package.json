@@ -1,6 +1,6 @@
 {
   "name": "rtl-unicode-normalizer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A configurable package for normalizing contextual forms of RTL characters. Also normalizing texts with both RTL and LTR characters.",
   "scripts": {
     "prepublish": "tsc",
