@@ -129,22 +129,11 @@ export class Character {
             return;
         }
         if (!this.isAtBeginning() && !this.isAtEnd()) {
-
-            // console.log('self B: ', this.self.isBeforeSticky());
-            // console.log('self a: ', this.self.isAfterSticky());
-            //
-            // console.log('before: ', this.before.isAfterSticky());
-            // console.log('after: ', this.after.isBeforeSticky());
-
-
-            // if (!this.before.isAfterSticky() && this.self.isBeforeSticky() && this.self.isAfterSticky()) {
-
             this.self.alphabet.forEach((c)=> {
                 if (!c.isBeforeSticky && !c.isAfterSticky) {
                     this.chosen = c;
                 }
             });
-            // }
         }
     }
 
@@ -152,9 +141,9 @@ export class Character {
         if (this.chosen) {
             return;
         }
-        if (!this.isAtBeginning()) {
+        if (!this.isAtBeginning() && !this.isAtEnd()) {
             // !this.self.isAfterSticky() &&
-            if (!this.self.isAfterSticky() && this.before.isAfterSticky() && this.self.isBeforeSticky()) {
+            if (this.before.isAfterSticky() && this.self.isBeforeSticky()) {
                 this.self.alphabet.forEach((c)=> {
                     if (c.isBeforeSticky && !c.isAfterSticky) {
                         this.chosen = c;
