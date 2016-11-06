@@ -1,3 +1,8 @@
 .idea/
+node_modules
+src/sample.ts
+typings
+server.ts
+**/*.log*
 **/*.js
 **/*.js.map

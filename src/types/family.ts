@@ -1,5 +1,6 @@
 import {IRawCharacterAlphabet, IRawCharacterMapping} from "./character";
 interface IRawFamily {
+    isRTL: boolean;
     characters: {
         alphabet: IRawCharacterAlphabet[],
         mapping: IRawCharacterMapping[]
@@ -14,12 +15,15 @@ interface IFamily extends IRawFamily {
 
 export class Family implements IFamily {
 
+    isRTL: boolean;
+
     characters: {alphabet: IRawCharacterAlphabet[]; mapping: IRawCharacterMapping[]};
 
-    constructor(alphabet: IRawCharacterAlphabet[], mapping: IRawCharacterMapping[]) {
+    constructor(src: IRawFamily) {
+        this.isRTL = src.isRTL;
         this.characters = {
-            alphabet: alphabet,
-            mapping: mapping
+            alphabet: src.characters.alphabet,
+            mapping: src.characters.mapping
         };
     }
 
