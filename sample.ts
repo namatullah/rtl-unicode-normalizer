@@ -1,4 +1,4 @@
-import {Character} from "./server/types/character";
+import {Character} from "./src/types/character";
 let str = "افغانستان";
 
 for (let i = 0; i < str.length; i++) {

@@ -1,1 +1,1 @@
-export * from "./src/types/RTLConverter";
+export * from "./src/types/RTLUnicodeNormalizer";
